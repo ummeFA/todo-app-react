@@ -1,5 +1,6 @@
 import React from "react";
 import notepad from "../assets/images/notepad.png";
+import TodoItems from "./TodoItems";
 const Todo = () => {
   return (
     <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[550px] rounded-xl">
@@ -19,6 +20,11 @@ const Todo = () => {
         <button className="border-none rounded-full bg-orange-600 w-32 h-14 text-white text-lg  font-medium cursor-pointer">
           Add +
         </button>
+      </div>
+
+      {/* To-Do List */}
+      <div className="">
+        <TodoItems />
       </div>
     </div>
   );
